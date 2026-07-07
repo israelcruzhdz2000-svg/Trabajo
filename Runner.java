@@ -57,7 +57,7 @@ public class Runner {
                     "idPais": "1",
                     "idCanal": "1",
                     "idSucursal": "9567",
-                    "folio": "6010"
+                    "folio": "6003"
                   },
                   "idAcceso": "%s"
                 }""".formatted(UUID.randomUUID(), idAcceso);
@@ -71,10 +71,10 @@ public class Runner {
             out.println("JWT:");
             out.println(jwt);
             out.println();
-            out.println("---Liga 1---");
+            out.println("---Liga 1 QR---");
             out.println("https://auth-qr.dev-biometria-facial.com/?token=" + jwt);
             out.println();
-            out.println("---Liga 2---");
+            out.println("---Liga 2 AUTENTICACION---");
             out.println("https://faceauth.dev-biometria-facial.com/?token=" + jwt);
             out.println();
         }
